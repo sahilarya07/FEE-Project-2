@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Image Carousel</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="flex items-center justify-center h-screen bg-black bg-no-repeat bg-center bg-cover relative overflow-hidden transition duration-3000 ease-in-out">
+  <div  class="carousel h-80 md:h-auto w-96 md:w-auto md:max-w-lg lg:max-w-xl xl:max-w-5xl overflow-hidden">
+    <div class="image-container" id="imgs">
+      <img
+        src="./images/dog2.jpg"
+        alt="">
+      <img
+        src="./images/polar.jpg"
+        alt="">
+      <img
+        src="./images/fourth.jpg"
+        alt="">
+      <img
+        src="./images/bird.jpg"
+        alt="">
+    </div>
+    <div  class="flex justify-between">
+      <button class="bg-transparent font-inherit text-white border-none py-2 px-1/2 cursor-pointer w-1/2 hover:bg-violet-500 focus:outline-none" id="left">
+        Previous </button>
+          <button class="bg-transparent font-inherit text-white border-none py-2 px-1/2 cursor-pointer w-1/2 hover:bg-violet-500 focus:outline-none" id="right"> Next</i></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
